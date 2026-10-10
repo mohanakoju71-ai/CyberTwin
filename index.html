@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberTwin - Personal Cybersecurity Digital Twin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<canvas id="bg" aria-hidden="true"></canvas><div class="gridfx" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app" id="app">
+ <aside class="side" id="side" aria-label="Main navigation">
+  <div class="brand"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12 5v9c0 7-5 12-12 14C9 28 4 23 4 16V7z" fill="none" stroke="#38BDF8" stroke-width="2"/><circle cx="16" cy="14" r="3" fill="#8B5CF6"/><path d="M16 17v6M10 12l-3-2M22 12l3-2" stroke="#38BDF8" stroke-width="1.6"/></svg><b>CyberTwin</b></div>
+  <nav id="nav" aria-label="Sections"></nav>
+  <div class="foot"><div class="status" id="conn"><i class="dot"></i><span class="lbl">Checking API…</span></div>
+   <div class="prof"><span class="av">A</span><span class="lbl">aarav<small>Demo profile</small></span></div></div>
+ </aside>
+ <div class="col"><header class="top"><button id="tog" aria-label="Toggle sidebar">☰</button><span id="ttl"></span>
+  <span class="pill demo" title="All data is synthetic">Synthetic demo data</span>
+  <button class="btn g sm" data-act="guide">Guided demo</button>
+  <div class="flow">Collect › Understand › Learn › Detect › Analyze › Explain › Respond › Learn</div></header>
+  <div id="offline" class="offline" role="alert" hidden>API unreachable. Showing the last loaded data; actions are disabled until it reconnects.</div>
+  <main id="main" tabindex="-1"></main></div>
+</div>
+<div id="guide" class="guide" hidden></div><div id="modal" class="modal" hidden></div><div id="toasts" class="toasts" aria-live="polite"></div>
+<script src="app.js"></script></body></html>
